@@ -1,0 +1,464 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page</title>
+
+    <!--font css copy trên w3school hay gg font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--css bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--css cá nhân-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- css thư viện owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header" class="py-2">
+        <div class="container-fluid">
+            <div class="row text-white">
+                <div class="col-md-7 text-md-left text-center header__left pt-1">
+                    <i class="fa fa-phone"></i>
+                    <!--phải cdn dạng font awesome-->
+                    <span class="mr-2">01634643124</span>
+                    <i class="fa fa-envelope"></i>
+                    <span>dangtrunghieu147@gmail.com</span>
+                </div>
+                <div class="col-md-5 text-md-right text-center text-right mmt-md-0 mt-1 header__right">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <!--từ sm trở xuống thu nhỏ menu thì dùng md-->
+        <div class="container">
+            <a href="project2.html" class="navbar-brand navbar-brand--logo text-center">
+                <h1 class="mb-0">
+                    <i class="fa fa-book"></i>
+                    INSTRUCTION
+                </h1>
+                <p>EDUCATION</p>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav navbar-nav--menu ml-auto">
+                    <li class="nav-item active">
+                        <a href="project2.html" class="nav-link">HOME</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SERVICES</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">GALLERY</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PAGES</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- CAROUSEL -->
+    <div class="carousel slide" data-ride="carousel" id="carousel-slider">
+        <!-- 3 thanh chuyển slider -->
+        <ol class="carousel-indicators carousel-indicators--config">
+            <li class="active" data-target="#carousel-slider" data-slide-to="0"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <!-- hình trong slider -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="width:100%; height:670px;" src="./img/banner1.png" class="img-fluid" alt="">
+                <div class="carousel-caption carousel-caption--config">
+                    <h1>Graphic Work <b>Designing</b></h1>
+                    <p>Any successful career starts with good education. Together with us you will have deeper knowledge
+                        of the subjects</p>
+                    <button class="btn btn-outline-light py-1 py-sm-2 px-sm-3  btn--readmore" data-toggle="modal"
+                        data-target="#modal-carousel">
+                        Read More
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item  ">
+                <img style="width:100%; height:670px;" src="./img/banner2.png" class="img-fluid" alt="">
+                <div class="carousel-caption carousel-caption--config">
+                    <h1>Graphic Work <b>Designing</b></h1>
+                    <p>Any successful career starts with good education. Together with us you will have deeper knowledge
+                        of the subjects</p>
+                    <button class="btn btn-outline-light py-1 py-sm-2 px-sm-3 btn--readmore" data-toggle="modal"
+                        data-target="#modal-carousel">
+                        Read More
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item  ">
+                <img style="width:100%; height:670px;" src="./img/banner3.png" class="img-fluid" alt="">
+                <div class="carousel-caption carousel-caption--config">
+                    <h1>Graphic Work <b>Designing</b></h1>
+                    <p>Any successful career starts with good education. Together with us you will have deeper knowledge
+                        of the subjects</p>
+                    <button class="btn btn-outline-light py-1 py-sm-2 px-sm-3 btn--readmore" data-toggle="modal"
+                        data-target="#modal-carousel">
+                        Read More
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 2 nút control -->
+        <a href="#carousel-slider" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#carousel-slider" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="modal fade" id="modal-carousel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header--carousel">
+                    <h1>INSTRUCTION</h1>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/g12.png" class="img-fluid" alt="">
+                    <p class="modal-body__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                        atque veniam molestiae molestias enim, voluptatibus sit in assumenda commodi quae quos earum
+                        quisquam fuga expedita dolorem! Ex, autem nihil voluptatum ratione doloremque et dicta
+                        architecto consectetur blanditiis at eveniet porro!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WELCOME TO EDUCATION -->
+    <section class="container welcome-section pt-50">
+        <div class="row">
+            <div class="col text-center welcome-title">
+                <h1>WELCOME TO EDUCATION</h1>
+                <span>When Climbing The Career Ladder</span>
+                <div class="welcome-title__line mx-auto mt-3 mb-sm-5 mb-3"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorem expedita, voluptate,
+                    officia accusantium veniam illum quod modi, quam corporis voluptatibus unde culpa eveniet dicta
+                    nostrum alias tempora. Numquam similique veritatis iste molestias, ab delectus rem dolorum facilis
+                    nisi voluptate!</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="card-group col-12">
+                <div class="col-sm card border-dark">
+                    <div class="card-body education-course">
+                        <i class="fa fa-desktop"></i>
+                        <h2>Design Course</h2>
+                        <h3>FASHION DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3>FASHION DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3>FASHION DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-sm card border-dark">
+                    <div class="card-body education-course">
+                        <i class="fa fa-arrows-alt"></i>
+                        <h2>Marketing Course</h2>
+                        <h3>FACEBOOK MARKETING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3>FACEBOOK MARKETING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3>FACEBOOK MARKETING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-sm card border-dark">
+                    <div class="card-body education-course">
+                        <i class="fa fa-bar-chart"></i>
+                        <h2>Finance Course</h2>
+                        <h3>COMPLEXITIES OF BANKING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3>COMPLEXITIES OF BANKING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <h3>COMPLEXITIES OF BANKING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR STAT -->
+    <section class="stat-section">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center ">
+                    <!--có row thì phải kèm col-->
+                    <h1>OUR STAT</h1>
+                    <span>When Climbing The Career Ladder</span>
+                    <div class="stat-line welcome-title__line mx-auto mt-3 mb-3 mb-sm-5"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 stat-detail">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h2>Graduates</h2>
+                    <p>45</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 stat-detail">
+                    <i class="fa fa-user"></i>
+                    <h2>Certified Staff</h2>
+                    <p>165</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 stat-detail">
+                    <i class="fa fa-users"></i>
+                    <h2>Student</h2>
+                    <p>563</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 stat-detail">
+                    <i class="fa fa-trophy"></i>
+                    <h2>Awards</h2>
+                    <p>245</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OFFER -->
+    <section class="container offer-section">
+        <div class="row">
+            <div class="col offer-title text-center">
+                <h1>WHAT WE OFFER</h1>
+                <span>When Climbing The Career Ladder</span>
+                <div class="welcome-title__line mx-auto mt-3 mb-3 mb-sm-5"></div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-12 col-md-4">
+                <div class="offer-item">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>UNDERGRADUATE STUDY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti quos.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 col-md-4">
+                <div class="offer-item">
+                    <i class="fa fa-book"></i>
+                    <h3>UNDERGRADUATE STUDY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti quos.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 col-md-4">
+                <div class="offer-item">
+                    <i class="fa fa-server"></i>
+                    <h3>UNDERGRADUATE STUDY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti quos.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 col-md-4">
+                <div class="offer-item">
+                    <i class="fa fa-comment"></i>
+                    <h3>UNDERGRADUATE STUDY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti quos.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 col-md-4">
+                <div class="offer-item">
+                    <i class="fa fa-bookmark"></i>
+                    <h3>UNDERGRADUATE STUDY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti quos.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 col-md-4">
+                <div class="offer-item">
+                    <i class="fa fa-globe "></i>
+                    <h3>UNDERGRADUATE STUDY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti quos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEST SECTION -->
+    <section class="testimonials-section">
+        <div class="container ">
+            <div class="row">
+                <div class="col testimonials-title text-center">
+                    <h1>TESTIMONIALS</h1>
+                    <span class="testimonials-span">When Climbing The Career Ladder</span>
+                    <div class="stat-line welcome-title__line mx-auto mt-3 mb-3 mb-sm-5"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col testimonials-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="item__box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorum maxime
+                                inventore culpa at laboriosam!</p>
+                        </div>
+                        <div class="item__user">
+                            <img src="./img/g2.jpg" alt="">
+                            <p>Steven</p>
+                            <span>Vesticare</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEW & EVENT -->
+    <section class="container event-section">
+        <div class="row">
+            <div class="col event-title text-center">
+                <h1>NEW & EVENT</h1>
+                <span>Exclusive Holidays For Any Travelers</span>
+                <div class="stat-line welcome-title__line mx-auto mt-3 mb-3 mb-sm-5"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-5 event-img">
+                <img src="./img/g7.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-md-7 event-info">
+                <h2>SIT AMET JUSTO VITAE</h2>
+                <span>3/01/2018</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, labore. Non sint ea et est iure? Harum, in! Amet, accusantium.</p>
+            </div>
+            <div class="col-sm-6 col-md-7 event-info">
+                <h2>SIT AMET JUSTO VITAE</h2>
+                <span>3/01/2018</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, labore. Non sint ea et est iure? Harum, in! Amet, accusantium.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 event-img">
+                <img src="./img/g8.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-about mb-3 mb-md-0">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum amet dolor sit amet sit dolor sit amet amet dolor sit ametconsectetur adipisicing elit. Harum, veniam dignissimos eum minus pariatur nihil eos debitis. Voluptatem, exercitationem. Quas!</p>
+                </div>
+                <div class="col-md-4 footer-news mb-3 mb-md-0">
+                    <h2>Latest New</h2>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem ipsum consectetur adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem sit amet amet consectetur adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem ipsum dolr adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem dolor stur dolor sit amet adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem dolor ectetur dolor sit amet adipisicing elit.</span>
+                    </p>
+                </div>
+                <div class="col-md-4 footer-info mb-3 mb-md-0">
+                    <h2>Contact Info</h2>
+                    <p>
+                        <i class="fa fa-map-marker "></i>
+                        <span>8080 USA, Honey block, New York City</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        <span>nguyenanhplt9x@gmail.com</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        <span>0971438135</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row footer-form mt-md-5 mb-3 mb-md-0">
+                <div class="col-md-5 col-lg-4">
+                    <h2 class="text-md-right text-left">Sign up for your Newsletter</h2>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <input  type="email" name="email" placeholder="Enter Email Address..." >
+                    <button class="btn text-white">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-3 text-center text-white">
+        <p class="mb-0">@ 2018 Instruction. All rights reserved | Design by <span>W3layouts</span></p>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:30,//khoảng cách giữa các item 
+            nav:false,//false: hiện 2 chấm tròn như trong slider
+            autoplay:true,//tự lặp
+            autoplayTimeout:2000,//tg lặp là 2s
+            autoplayHoverPause:true,//hover vào thì dừng lặp
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    
+                },
+                600:{
+                    items:2  
+                },
+                1000:{//ở màn hình >= 1000
+                    items:3//cho hiển thị 3 cái   
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

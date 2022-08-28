@@ -1,0 +1,297 @@
+/* GLOBAL CSS */
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.line::after{
+    content: '';
+    width: 100%;/*thẻ a rộng bao nhiêu thì nó rộng bây nhiêu*/
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute; 
+    bottom: -1px;
+    left: 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.section-title{
+    color: #ec7532;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 12px;
+    position: relative;
+}
+/* END GLOBAL CSS */
+
+/* HEADER CSS */
+.header{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+.header__detail i,  .header__detail span{
+    font-size: 14px;
+}
+.header__detail span{
+    border-right: rgba(255, 255, 255, 0.2) !important;
+}
+.header__navbar .nav-item .nav-link{
+    color: white;
+    padding: 0 15px;
+}
+.header__navbar .navbar-nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.header__navbar .nav-item::after{/* chỉnh thanh gạch đích */
+    content: '';
+    display: block;/* để chỉnh được height và width */
+    height: 3px;
+    width: 0;
+    background: linear-gradient(to right,#fbbd61,#ec7532);/*trải từ trái sang phải, từ cam nhạt đến cam đậm*/
+    transition: all 0.5s;/*quá trình đường này chuyển từ 0-100% là 0.5s*/
+}
+.header__navbar .nav-item:hover::after, .header__navbar .nav-item.active::after{/*hover đường kẻ mới hiện ra*/
+    width: 100%;
+}
+/* END HEADER CSS */
+
+/* CAROUSEL */
+.my-carousel img {
+    height: 850px;
+    width: 1500px;
+}
+.carousel-item__overlay{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,black,transparent);
+}
+.carousel-item__caption{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.carousel-item__caption .title{
+    color: #fbbd61;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.carousel-item__caption p{
+    font-size: 18px;
+    padding-right: 25%;
+}
+.carousel-item__trailer span{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    line-height: 39px;
+}
+.btn-orange{
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    border-radius: 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 11px 30px;
+    cursor: pointer;
+}
+.my-carousel .carousel-indicators li{
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+.my-carousel .carousel-indicators li.active{
+    background: white;
+}
+.my-carousel .carousel-indicators {
+    bottom: 50px;
+}
+/* END CAROUSEL */
+
+/* SHOWING MOVIE */
+.movie{
+    padding-top: 80px;
+}
+ 
+.movie__title::after{
+    content: '';
+    width: 160px;/*chỉnh dài, cao cho kẻ cam*/
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;/*để nó đè lên border*/
+    bottom: -1px;
+    left: 0;
+}
+.movie__item{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;/*bên ngoài k nhìn thấy hiệu ứng*/
+}
+/* đưa nội dung vào trên ảnh bằng absolute ,sau đó chỉnh top,left*/
+.movie__detail{
+    position: absolute;/*cha gần nhất là movie__item*/
+    top: 50%;
+    transform: translateY(-50%) /*scale(0.8)*/;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /* transition:all 0.2s; */
+}
+.movie__detail i{
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid white;/*có chỉnh 2px màu sắc thì mới thấy mới hiện được*/
+    margin: 15px auto;
+    line-height: 80px;/*để nút nằm ngay giữa*/
+}
+.movie__detail a{
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.movie__detail span{
+    font-size: 16px; 
+}
+.movie__overlay{
+    position: absolute;/*để có thể di chuyển bên trong item*/
+    top: 0;
+    left: -400%;
+    transform: skewX(45deg);
+    background: linear-gradient(to bottom, #fbbd61,#ec7532);
+    width: 300%;
+    height: 100%;
+    transition: all 0.5s;/* để thấy quá trình di chuyển từ left -400 tới left -100 */
+}
+.movie__item:hover .movie__overlay{
+    left: -100%;
+}
+.movie__item:hover .movie__detail{
+    opacity: 1;/*hover mới hiện chữ*/
+    transform: translateY(-50%) scale(1);
+}
+.movie__name{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.movie__start{
+    color: #fbbd61;
+}
+/* END SHOWING MOVIE */
+
+/* SHOWTIMES CSS */
+.showtimes{
+    padding-top: 80px;
+}
+.showtimes .nav-tabs .nav-link{
+    position: relative;
+    color: #4a4a4a;
+    padding: 10px 30px;
+}
+.showtimes .nav-tabs .nav-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute; 
+    bottom: -1px;
+    left: 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.showtimes .nav-tabs .nav-link.active::after,.showtimes .nav-tabs .nav-link:hover::after{
+    width: 100%;/*thẻ a rộng bao nhiêu thì nó rộng bây nhiêu*/
+}
+.showtimes .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .showtimes .nav-tabs .nav-link:hover{/*gắn kèm class cha do mình đặt để nav-tabs khác k bị ảnh hưởng*/
+    border: white;/*để khi active, và hover, k hiện khung border*/
+
+}
+.showtimes__list i, .showtimes__list span{
+    font-size: 14px;
+}
+.showtimes__length span{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+/* END SHOWTIMES CSS */
+
+/* COMING SOON CSS */
+.coming{
+    background:black;
+}
+.coming__bg{
+    padding: 80px 0;
+    background-image: url('../img/slider-bg.png');
+    background-size: cover;
+    background-position: center center;
+}
+.coming__bg .section-title{
+    color: white;
+}
+.coming__bg .line::after{
+    width: 160px;
+}
+.coming__detail span{
+    font-size: 14px;
+    color: #ec7532;
+}
+.coming__detail h1{
+    font-size: 34px;
+}
+.coming__detail .fa-star{
+    font-size: 14px;
+    color: #fbbd61;
+}
+.coming__date{
+    opacity: 0.75;
+    font-size: 14px;
+    margin-left: 10px;
+    color: white !important;
+}
+.coming__detail a{
+    color: #ec7532;
+    letter-spacing: 3px;
+}
+.coming__trailer{
+    position: relative;
+}
+.coming__trailer i{
+    width: 84px;
+    height: 84px;
+    display: block;
+    border: 2px solid #ec7532;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 84px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.coming__trailer img{
+    width: 540px;
+    height: 410px;
+}
+.coming__list img{
+     height: 200px;
+}
+.coming__list{
+    background-color: black;
+}
+ 
+/* END COMING SOON CSS */

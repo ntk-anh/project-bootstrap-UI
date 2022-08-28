@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+
+    <!--font awesome copy trên w3school -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--css cá nhân-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header" class="py-2">
+        <div class="container-fluid">
+            <div class="row text-white">
+                <div class="col-md-7 text-md-left text-center header__left pt-1">
+                    <i class="fa fa-phone"></i>
+                    <!--phải cdn dạng font awesome-->
+                    <span class="mr-2">01634643124</span>
+                    <i class="fa fa-envelope"></i>
+                    <span>dangtrunghieu147@gmail.com</span>
+                </div>
+                <div class="col-md-5 text-md-right text-center text-right mmt-md-0 mt-1 header__right">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <!--từ sm trở xuống thu nhỏ menu thì dùng md-->
+        <div class="container">
+            <a href="project2.html" class="navbar-brand navbar-brand--logo text-center">
+                <h1 class="mb-0">
+                    <i class="fa fa-book"></i>
+                    INSTRUCTION
+                </h1>
+                <p>EDUCATION</p>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav navbar-nav--menu ml-auto">
+                    <li class="nav-item active">
+                        <a href="project2.html" class="nav-link">HOME</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SERVICES</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">GALLERY</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PAGES</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                        <div class="nav-item__line"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- CONTACT CAROUSEL -->
+    <section class="contact-carousel">
+
+    </section>
+    <!-- CONTACT US -->
+    <section class="container contact-section">
+        <div class="row">
+            <div class="col contact-title text-center">
+                <h1>CONTACT US</h1>
+                <span>When Climbing The Career Ladder</span>
+                <div class="welcome-title__line mx-auto mt-3 mb-3 mb-sm-5"></div>
+            </div>
+        </div>
+        <div class="row contact-content">
+            <div class="col-lg-5">
+                <div class="contact-info  text-white">
+                    <h3 class="mb-4">Contact Info</h3>
+                    <div class="contact-info__detail d-flex">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h4>Telephone<br><span>+1 (100)222-23-33</span></h4>
+                    </div>
+                    <div class="contact-info__detail d-flex">
+                        <div>
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <h4>Mail<br><span>info@example.com</span></h4>
+                    </div>
+                    <div class="contact-info__detail d-flex">
+                        <div>
+                            <i class="fa fa-map-marker "></i>
+                        </div>
+                        <h4>Location<br><span>8088 USA, Honey<br> block, New York City</span></h4>
+                    </div>
+                    <div class="contact-info__social">
+                        <i class="fa fa-facebook contact-facebook"></i>
+                        <i class="fa fa-twitter contact-twitter"></i>
+                        <i class="fa fa-twitch contact-twitch"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 contact-info__img">
+            </div>
+        </div>
+        <div class="row contact-form mt-5">
+            <div class="col-lg">
+                <input type="text" class="form-control mb-3" name="name" placeholder="Name">
+                <input type="email" class="form-control mb-3" name="email" placeholder="Email">
+                <input type="text" class="form-control mb-3" name="phone" placeholder="Phone">
+                <input type="text" class="form-control mb-3" name="subject" placeholder="Subject">
+            </div>
+            <div class="col-lg">
+                <textarea rows="4" name="message" class="form-control " placeholder="Message"></textarea>
+                <button class="btn btn-block py-3 btn-contact-submit">SUBMIT</button>
+            </div>
+        </div>
+    </section>
+    <!-- NHÚNG BẢN ĐỒ -->
+    <section class="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596698663!2d-74.25986773739224!3d40.697149413874705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1661720390042!5m2!1svi!2s"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-about mb-3 mb-md-0">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum amet dolor sit amet sit dolor sit amet amet dolor sit ametconsectetur adipisicing
+                        elit. Harum, veniam dignissimos eum minus pariatur nihil eos debitis. Voluptatem,
+                        exercitationem. Quas!</p>
+                </div>
+                <div class="col-md-4 footer-news mb-3 mb-md-0">
+                    <h2>Latest New</h2>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem ipsum consectetur adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem sit amet amet consectetur adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem ipsum dolr adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem dolor stur dolor sit amet adipisicing elit.</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-arrow-right"></i>
+                        <span>Lorem dolor ectetur dolor sit amet adipisicing elit.</span>
+                    </p>
+                </div>
+                <div class="col-md-4 footer-info mb-3 mb-md-0">
+                    <h2>Contact Info</h2>
+                    <p>
+                        <i class="fa fa-map-marker "></i>
+                        <span>8080 USA, Honey block, New York City</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        <span>nguyenanhplt9x@gmail.com</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        <span>0971438135</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row footer-form mt-md-5 mb-3 mb-md-0">
+                <div class="col-md-5 col-lg-4">
+                    <h2 class="text-md-right text-left">Sign up for your Newsletter</h2>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <input type="email" name="email" placeholder="Enter Email Address...">
+                    <button class="btn text-white">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-3 text-center text-white">
+        <p class="mb-0">@ 2018 Instruction. All rights reserved | Design by <span>W3layouts</span></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
